@@ -17,10 +17,10 @@ class DesafioTodolistApplicationTests {
 
 		webTestClient
 				.post()
-				.uri("/tods")
+				.uri("/todos")
 				.bodyValue(todo)
 				.exchange()
-				.expectStatus().isOk()
+				.expectStatus().isCreated()
 				.expectBody()
 				.jsonPath("$").isArray()
 				.jsonPath("$.length()").isEqualTo(1)

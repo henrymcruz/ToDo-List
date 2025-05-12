@@ -1,4 +1,4 @@
-package br.com.henrymori.desafio_todolist.controller;
+package br.com.henrymori.desafio_todolist.web;
 
 import java.util.List;
 
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.henrymori.desafio_todolist.entity.Todo;
 import br.com.henrymori.desafio_todolist.service.TodoService;
-import jakarta.validatiom.Valid;
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/todos")
